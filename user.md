@@ -72,6 +72,69 @@ function getSheetData(){
 
  -->
 <!-- ------------------------------------------------------------ -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Data</title>
+</head>
+
+<body>
+  <center>
+    <h1">
+      All data from the survey
+      </h1>
+
+      <table style="border: 2px solid black;
+    width: 500px;
+    height: 500px;" cellpadding='5px'>
+        <?var tableData = getSheetData();?>
+        <?for(var i = 0; i< tableData.length; i++) { ?>
+        <?if(i==0) { ?>
+        <tr>
+          <?for(var j = 0; j< tableData[i].length; j++){?>
+          <th>
+            <?= tableData[i][j] ?>
+          </th>
+          <? } ?>
+        </tr>
+        <? } else { ?>
+        <tr>
+          <?for(var j = 0; j< tableData[i].length; j++){?>
+          <td>
+            <?= tableData[i][j] ?>
+          </td>
+          <? } ?>
+        </tr>
+        <? } ?>
+        <? } ?>
+      </table>
+
+  </center>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- 
 //   const form = document.querySelector("form");
 //         form.addEventListener("submit", (e) => {
