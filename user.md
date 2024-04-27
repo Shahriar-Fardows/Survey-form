@@ -54,6 +54,22 @@ var sheetName = 'Sheet1'
 			lock.releaseLock()
 		  }
 		}
+
+    function doGet(e){
+  var x = HtmlService.createTemplateFromFile('display');
+  var y = x.evaluate();
+  var z = z.setXframeOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+  return z;
+}
+
+function getSheetData(){
+  var a = SpreadsheetApp.getActiveSpreadsheet();
+  var b = a.getSheetByName('');
+  var c = b.getDataRange();
+  return c.getValues(userData);
+}
+
+
  -->
 <!-- ------------------------------------------------------------ -->
 <!-- 
